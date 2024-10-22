@@ -23,11 +23,9 @@ can enhance decision-making for inventory management, marketing strategies, and 
 business planning.
 
 ## Objectives
-- To analyze historical sales data   to   identify   trends   and   seasonal   patterns   in   the
-Australian retail sector
-- To  develop a machine learning model based on historical   turnover   data, and use that to forecast turnover across the Australian Bureau of Statistics (ABS) categories for the dataset.
-- To   visualize   and   interpret   the   results   for   actionable   insights   that   can   inform   retail
-strategies.
+- To analyze historical turnover data to identify trends in the Australian retail sector
+- To develop a machine learning model and use that to forecast turnover across the Australian Bureau of Statistics (ABS) categories for the dataset.
+- To visualize and interpret the results for actionable insights that can inform retail strategies.
 
 ## Dataset
 
