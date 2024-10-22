@@ -51,8 +51,6 @@ data repositories.
 
 ## Expected Outcomes
 - A trained predictive model capable of accurately forecasting retail turnover.
-- Insights into sales trends, seasonal patterns, and key drivers of sales in the Australian
-retail sector.
 - Visualizations   that   clearly   convey   findings   to   stakeholders   for   informed   decision-
 making.
 
