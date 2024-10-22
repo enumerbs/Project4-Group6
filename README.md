@@ -6,6 +6,12 @@
 
  Forecasting Turnover in the Australian Retail Sector using Machine Learning
 
+ ### Group members
+ - Monica
+ - Khushi
+ - Napat
+ - Greg
+
 ---
 
 ## Introduction
