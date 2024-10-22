@@ -18,7 +18,7 @@
 
 In the fast-paced retail environment, understanding sales trends and accurately forecasting
 future turnover is critical for business success. This project aims to utilize machine learning
-techniques on the Retail Trade, Australia dataset to predict future sales, providing insights that
+techniques on the Retail Trade, Australia dataset to predict future turnover, providing insights that
 can enhance decision-making for inventory management, marketing strategies, and overall
 business planning.
 
@@ -52,11 +52,13 @@ data repositories.
 4. Machine Learning:
 - Split the data into training and testing subsets
 - Choose appropriate ML models e.g. Random Forest Regression and Neural Prophet
+5. Presentation:
+- Plot results using Matplotlib
+- Provide user interaction via queryable API and/or web application.
 
 ## Expected Outcomes
 - A trained predictive model capable of accurately forecasting retail turnover.
-- Visualizations   that   clearly   convey   findings   to   stakeholders   for   informed   decision-
-making.
+- Visualizations that convey findings to stakeholders for informed decision-making.
 
 ## Tools and Technologies
 - Programming Language: Python
