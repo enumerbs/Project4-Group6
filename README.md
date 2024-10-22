@@ -25,8 +25,15 @@ strategies.
 
 ## Dataset
 
--  https://www.abs.gov.au/statistics/industry/retail-and-wholesale-trade/retail-trade-australia/latest-release
+- https://www.abs.gov.au/statistics/industry/retail-and-wholesale-trade/retail-trade-australia/latest-release
 - In particular, the "Table 1. Retail turnover, by industry group" dataset in that release.
+- The ABS Retain Turnover categories are:
+    - Cafes, restaurants and takeaway food services
+    - Clothing, footwear and personal accessory retailing
+    - Department stores
+    - Food retailing
+    - Household goods retailing
+    - Other retailing
 
 ## Methodology
 
