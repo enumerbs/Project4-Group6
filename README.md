@@ -31,6 +31,7 @@ business planning.
 
 - https://www.abs.gov.au/statistics/industry/retail-and-wholesale-trade/retail-trade-australia/latest-release
 - In particular, the "Table 1. Retail turnover, by industry group" dataset in that release.
+    - Refer to the data downloads page: https://www.abs.gov.au/statistics/industry/retail-and-wholesale-trade/retail-trade-australia/latest-release#data-downloads 
 - The ABS Retail Turnover categories are:
     - Cafes, restaurants and takeaway food services
     - Clothing, footwear and personal accessory retailing
