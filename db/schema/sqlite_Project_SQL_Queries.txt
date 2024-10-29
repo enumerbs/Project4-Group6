@@ -1,0 +1,59 @@
+------------------------------------------------------------------------------
+Steps to recreate the 'ABS_RetailTurnover.db' SQLite database for this project.
+------------------------------------------------------------------------------
+(1) Initialise blank DB
+
+sqlite3 ABS_RetailTurnover.db
+
+------------------------------------------------------------------------------
+(2) Create table
+
+-> at the SQLite prompt, enter the 'create table' statements from "QuickDBD-CreateTable.sql", namely:
+
+CREATE TABLE "RetailTurnoverByIndustryGroup" (
+    "RecordDate" date  NOT NULL ,
+    "Original__Turnover_FoodRetailing" float  NOT NULL ,
+    "Original__Turnover_HouseholdGoodsRetailing" float  NOT NULL ,
+    "Original__Turnover_ClothingFootwearAndPersonalAccessoryRetailing" float  NOT NULL ,
+    "Original__Turnover_DepartmentStores" float  NOT NULL ,
+    "Original__Turnover_OtherRetailing" float  NOT NULL ,
+    "Original__Turnover_CafesRestaurantsAndTakeawayFoodServices" float  NOT NULL ,
+    "Original__Turnover_TotalIndustry" float  NOT NULL ,
+    "SeasonallyAdjusted__Turnover_FoodRetailing" float  NOT NULL ,
+    "SeasonallyAdjusted__Turnover_HouseholdGoodsRetailing" float  NOT NULL ,
+    "SeasonallyAdjusted__Turnover_ClothingFootwearAndPersonalAccessoryRetailing" float  NOT NULL ,
+    "SeasonallyAdjusted__Turnover_DepartmentStores" float  NOT NULL ,
+    "SeasonallyAdjusted__Turnover_OtherRetailing" float  NOT NULL ,
+    "SeasonallyAdjusted__Turnover_CafesRestaurantsAndTakeawayFoodServices" float  NOT NULL ,
+    "SeasonallyAdjusted__Turnover_TotalIndustry" float  NOT NULL ,
+    "Trend__Turnover_FoodRetailing" float  NULL ,
+    "Trend__Turnover_HouseholdGoodsRetailing" float  NULL ,
+    "Trend__Turnover_ClothingFootwearAndPersonalAccessoryRetailing" float  NULL ,
+    "Trend__Turnover_DepartmentStores" float  NULL ,
+    "Trend__Turnover_OtherRetailing" float  NULL ,
+    "Trend__Turnover_CafesRestaurantsAndTakeawayFoodServices" float  NULL ,
+    "Trend__Turnover_TotalIndustry" float  NULL ,
+    CONSTRAINT "pk_RetailTurnoverByIndustryGroup" PRIMARY KEY (
+        "RecordDate"
+    )
+)
+;
+
+------------------------------------------------------------------------------
+(3) Data import
+
+.import --csv --skip 1 RetailTurnoverByIndustryGroup.csv RetailTurnoverByIndustryGroup
+
+
+------------------------------------------------------------------------------
+(4) Queries
+
+(Optional - run this query at the SQLite command line to check the data has been loaded into both tables correctly.)
+
+select count(*) FROM RetailTurnoverByIndustryGroup;
+
+------------------------------------------------------------------------------
+(5) Quit to save
+
+.quit
+------------------------------------------------------------------------------
