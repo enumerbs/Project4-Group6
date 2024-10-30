@@ -52,14 +52,25 @@ data repositories.
 - Handle missing values, remove duplicates, and address outliers
 4. Machine Learning:
 - Split the data into training and testing subsets
-- Choose appropriate ML models e.g. Random Forest Regression and Neural Prophet
+  
+- Compare and Choose appropriate ML models e.g. Random Forest Regression, Neural Prophet, LSTM, ARIMA
+  Choice of Model was driven by use case, as the aim is to create a timeseries forecast and the above models are suitable for such.
+  
 5. Presentation:
 - Plot results using Matplotlib
 - Provide user interaction via queryable API and/or web application.
 
+ ## Evaluation Matrix**
+- Use MAE, MSE and R² metrics to evaluate model performance
+
 ## Expected Outcomes
 - A trained predictive model capable of accurately forecasting retail turnover.
 - Visualizations that convey findings to stakeholders for informed decision-making.
+
+## Potential Risks**
+- Data chosen might not be suitable
+- Model may produce biased outcomes
+- Overfitting - A chosen model might learn the training data too well, including it's noise and outliers, which can result in poor perfomance on unseen data.
 
 ## Tools and Technologies
 - Programming Language: Python
