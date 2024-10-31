@@ -29,7 +29,7 @@ business planning.
 
 -[Australian Bureau of Statistics](https://www.abs.gov.au/statistics/industry/retail-and-wholesale-trade/retail-trade-australia/latest-release)
 - In particular, the "Table 1. Retail turnover, by industry group" dataset in that release.
-    - Refer to the data downloads page: https://www.abs.gov.au/statistics/industry/retail-and-wholesale-trade/retail-trade-australia/latest-release#data-downloads 
+    - Refer to the data downloads page: https://www.abs.gov.au/statistics/industry/retail-and-wholesale-trade/retail-trade-australia/latest-release#data-downloads
 - The ABS Retail Turnover categories are:
     - Cafes, restaurants and takeaway food services
     - Clothing, footwear and personal accessory retailing
@@ -55,10 +55,10 @@ data repositories.
 - Handle missing values, remove duplicates, and address outliers
 4. Machine Learning:
 - Split the data into training and testing subsets
-  
-- Compare and Choose appropriate ML models e.g. Random Forest Regression, Neural Prophet, LSTM, ARIMA
-  Choice of Model was driven by use case, as the aim is to create a timeseries forecast and the above models are suitable for such.
-  
+
+- Compare and Choose appropriate ML models e.g. Random Forest Regression, Neural Prophet, LSTM, ARIMA.\
+  Choice of Model was driven by use case, as the aim was to create a timeseries forecast and the above models are suitable for such.
+
 5. Presentation:
 - Plot results using Matplotlib
 - Provide user interaction via queryable API and/or web application.
@@ -70,17 +70,17 @@ data repositories.
 - A trained predictive model capable of accurately forecasting retail turnover.
 - Visualizations that convey findings to stakeholders for informed decision-making.
 
-**Trial 1: Random Forest Regressor Model - Evaluation Matrics and Prediction for 2025 Turnover**
- 
+**Trial 1: Random Forest Regressor Model - Evaluation Metrics and Prediction for 2025 Turnover**
+
 ![image](https://github.com/user-attachments/assets/5da3fa88-5b2d-4808-b15c-3ffd763ecf6f)
 
-**Trial 2,3,4: ARMA, ARIMA and Neural Prophet - Evaluation Matrics**
+**Trial 2,3,4: ARMA, ARIMA and Neural Prophet - Evaluation Metrics**
 
 ![image](https://github.com/user-attachments/assets/f2d4d210-1840-4a22-8a59-780dbf2438d0)
 
-**Trial 5: LSTM Model -- Evaluation Matrics and Prediction for 2025 Turnover**
+**Trial 5: LSTM Model - Evaluation Metrics and Prediction for 2025 Turnover**
 
-**Less Perfoming LSTM Model**
+**Less Performing LSTM Model**
 
 Initinal Configuration
 - -Input features - Cleaned Turnover data
@@ -114,15 +114,43 @@ Stacked LSTM
 The preferred model is LSTM with highest R2 Values 1 and less MSE.
 - It produced better results compared to other Models
 - It works well with sequential data, making it ideal for time series forecasting.
-- LSTMs have memory cells that can maintain information over long period
+- LSTMs have memory cells that can maintain information over long period.
+
+## Folder structure & contents guide (for this GitHub repository)
+###
+Top-level files:
+- this README.md file
+- Jupyter Notebooks containing data modelling & results by team members:
+    - **RetailTurnover_Analysis_KK_final.ipynb** contains the data preparation, coding, and results for the final LSTM-based Machine Learning model.
+    - **RetailTurnover_Analysis_LSTM MODEL - Monica** contains earlier development work for the LSTM approach
+    - **RetailTurnover_GP.ipynb** contains development work on ARMA, ARIMA, and NeuralProphet models.
+
+Subfolders:
+- db
+    - SQLite database `ABS_RetailTurnover.db` containing the ABS Retail Turnover dataset for this project (converted from the original Excel file download)
+    - schema
+        - Database schema, ERD, table creation script
+        - `sqlite_Project_SQL_Queries.txt` file contains steps to reproduce the database and populate it with the dataset.
+- Notebooks
+    - dev
+        - Area for storing team members' work-in-progress (development) versions of Jupyter Notebooks.
+- presentation
+    - PDF version of the final presentation 'slides' for this project.
+- Resources
+    - Excel and CSV files containing the ABS Retail Turnover dataset for this project.
+
+## Implementation Notes
+
+The SQL database version of the source dataset was used in the **RetailTurnover_GP.ipynb** Jupyter Notebook to demonstrate how the data could be read from an SQL database, as this was a requirement of the project.\
+However, since the source dataset was small, most team members preferred to read from the CSV form of the dataset, particularly when developing code in the Google Colab (https://colab.google/) environment.
 
 ## Tools and Technologies
 - Programming Language: Python
 - Libraries: Pandas, Matplotlib, Scikit-learn
-- Data Storage: CSV or SQL database for handling data
+- Data Storage: CSV and SQL database for handling data
 
-#### Resources
-[Australian Bureau of Statistics](https://www.abs.gov.au/statistics/industry/retail-and-wholesale-trade/retail-trade-australia/latest-release)
+## Resources
+[Australian Bureau of Statistics - Retail Trade statistics](https://www.abs.gov.au/statistics/industry/retail-and-wholesale-trade/retail-trade-australia/latest-release) (including data up to August 2024 inclusive)
 
 Chat GPT
 
