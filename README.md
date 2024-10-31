@@ -80,9 +80,36 @@ data repositories.
 
 **Trial 5: LSTM Model -- Evaluation Matrics and Prediction for 2025 Turnover**
 
-![image](https://github.com/user-attachments/assets/c5b0e631-8890-4d29-a030-293900d960ef)
+**Less Perfoming LSTM Model**
+
+Initinal Configuration
+- -Input features - Cleaned Turnover data
+- - Model architecture - Single layer LSTM with dropout
+
+Model Training
+- - Layer structure is composed of 100 LSTM units to capture underlying patterns in the data
+- - Included dropout layer to prevent overfitting
+- - Adam optimizer was chosen
+- - Epochs - was initially set to 100 and later changed to 150 to increase performance
+
+![image](https://github.com/user-attachments/assets/6ab37080-c36d-4a33-83fe-0dad767f5606)
+
+**LSTM Model Optimisation**
+
+Advanced Architectures
+- Random Split between train-test was used
+- Bidirectional LSTM
+This allows the Model to learn from past and future
+
+Stacked LSTM
+- Multiple LSTM layers stacked on top of each other help the model learn more complex features.
+
+<img width="500" src="https://github.com/user-attachments/assets/7529293e-db85-4e6f-b241-b4420ce84fd4">
+
 
 **Final Model Selection**
+
+<img width="700" src="https://github.com/user-attachments/assets/c5b0e631-8890-4d29-a030-293900d960ef">
 
 The preferred model is LSTM with highest R2 Values 1 and less MSE.
 - It produced better results compared to other Models
